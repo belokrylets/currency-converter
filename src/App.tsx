@@ -1,11 +1,24 @@
-import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes
+} from "react-router-dom";
+import СurrencyСonverter from './components/СurrencyСonverter';
+import CurrencyRates from './components/CurrencyRates';
+import Navbars from './components/Navbars';
 
-function App() {
+const App = () => {
+
   return (
-    <div>
-
-    </div>
+    <Router>
+      <Navbars />
+      <Routes>
+        <Route path="/" element={<СurrencyСonverter />} />
+        <Route path="/CurrencyRates" element={<CurrencyRates />} />
+      </Routes>
+    </Router>
   );
 }
 
