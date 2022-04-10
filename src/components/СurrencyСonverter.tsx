@@ -29,11 +29,13 @@ const СurrencyСonverter: React.FC = () => {
     }, [entryField, from, to])
 
     return (
-        <div className='converter'>
-            <FromCurrency />
-            <div className='arrow'>→</div>
-            <ToCurrency />
-        </div>
+        <main className='container-xxl'>
+            <div className='converter'>
+                <FromCurrency />
+                <div className='arrow'>&#8595;</div>
+                <ToCurrency />
+            </div>
+        </main>
     );
 }
 

@@ -23,7 +23,8 @@ const CurrencyRates: React.FC = () => {
   }
 
   return (
-    <>
+    <main className='container-xxl'>
+      <div className='rates'>
       <div>
         <Form.Select onChange={hundleRateSelect} aria-label="Floating label select example">
           <option value="USD">Доллар США</option>
@@ -56,7 +57,8 @@ const CurrencyRates: React.FC = () => {
           </tbody>
         </Table>
       </div>
-    </>
+      </div>
+    </main>
   );
 }
 
