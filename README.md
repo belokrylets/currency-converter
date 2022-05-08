@@ -19,7 +19,7 @@ npm start
 Приложениие на React с использованием:
   - TypeScript
   - redux
-  - edux-thunk
+  - redux-thunk
   - redux-devtools-extension
   - react-bootstrap
   - react-router-dom
